@@ -14,13 +14,44 @@
 
 <body>
 
+  <!-- agahi Modal -->
+  <div class="modal fade" id="agahi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-14 fw-bold" id="exampleModalLabel">ورود به حساب کاربری</h1>
+          <button type="button" class="btn-close ms-0 me-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fw-bold mb-4 mt-4">شمارهٔ موبایل خود را وارد کنید</p>
+          <p class="text-muted fs-14 mb-2">قبل از ثبت آگهی، لطفاً وارد حساب خود شوید.</p>
+          <p class="text-muted fs-14">کد تأیید به این شماره پیامک می‌شود.</p>
+          <div class="border border-danger p-2 d-flex align-items-center gap-2">
+            <input class="border-0 outline-none bg-transparent flex-grow-1">
+            <p class="text-danger bg-gray3 rounded-pill py-1 px-2 fw-bold mb-0">+98</p>
+          </div>
+          <small class="text-danger fw-bold fs-12">وارد کردن شمارهٔ موبایل الزامی است.</small>
+          <p class="text-muted fs-14 mt-3">
+            <a class="text-danger fw-bold">شرایط استفاده از خدمات</a> و <a class="text-danger fw-bold">حریم خصوصی</a>
+            دیوار را می‌پذیرم.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">تایید</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <!-- header -->
 
   <header class="py-2 fs-12 border-bottom position-sticky top-0 bg-white z-10">
     <div class="container">
       <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center flex-grow-1  gap-3">
-          <a class="d-none d-xl-block" href="index.html"><img alt="logo" src="assets/img/logo.svg" class="img-fluid w-70"></a>
+          <a class="d-none d-xl-block" href="index.html"><img alt="logo" src="assets/img/logo.svg"
+              class="img-fluid w-70"></a>
           <div class="d-flex align-items-center gap-1 cursor-pointer rounded-3 py-2 px-3 fw-bold">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt"
               viewBox="0 0 16 16">
@@ -340,13 +371,98 @@
           </form>
         </div>
         <div class="d-xl-flex d-none align-items-center gap-2">
-          <div class="d-flex flex-shrink-0 align-items-center gap-1 cursor-pointer rounded-3 py-2 px-3 fw-bold">
-            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person"
-              viewBox="0 0 16 16">
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
-            </svg>
-            <p class="mb-0">دیوار من</p>
+          <div class="dropdown">
+            <div data-bs-toggle="dropdown" aria-expanded="false"
+              class="d-flex flex-shrink-0 align-items-center gap-1 cursor-pointer rounded-3 py-2 px-3 fw-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+              </svg>
+              <p class="mb-0">دیوار من</p>
+            </div>
+            <ul class="dropdown-menu">
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 text-end" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+                  </svg>
+                  <div class="fs-12">
+                    <p class="mb-1 fw-bold">نام کاربر</p>
+                    <p class="mb-0 text-muted">09149492490</p>
+                  </div>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                    <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                    <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">تایید هویت</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">آگهی های من</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">نشان ها</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-medical" viewBox="0 0 16 16">
+                    <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">یادداشت ها</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                    <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">بازدیدهای اخیر</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person mt-1" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"></path>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">رزومه من</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                    <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">دیوار برای کسب و کارها</p>
+                </a>
+              </li>
+              <li class="border-bottom">
+                <a class="dropdown-item d-flex gap-2 align-items-center text-end py-3" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                    <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                  </svg>
+                    <p class="mb-0 fw-bold fs-12">خروج</p>
+                </a>
+              </li>
+            </ul>
           </div>
           <a class="d-flex align-items-center gap-2 text-dark cursor-pointer rounded-3 py-2 px-3 fw-bold">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-chat"
@@ -359,7 +475,7 @@
           <a class="d-flex align-items-center gap-2 text-dark cursor-pointer rounded-3 py-2 px-3 fw-bold">
             <p class="mb-0">پشتیبانی</p>
           </a>
-          <div class="btn btn-danger flex-shrink-0">
+          <div class="btn btn-danger flex-shrink-0" data-bs-toggle="modal" data-bs-target="#agahi">
             ثبت آگهی
           </div>
         </div>
@@ -376,9 +492,9 @@
         <!-- sidebar -->
         <div class="col-lg-3 d-none d-lg-block">
           <div class="pt-5 position-sticky top-86 overflow-y-auto h-88vh">
-            <h6 class="fs-14 fw-bold mb-1">دسته ها</h6>
+            <!-- <h6 class="fs-14 fw-bold mb-1">دسته ها</h6> -->
             <!-- menu sidebar -->
-            <ul class="mb-0 list-unstyled p-0 lh-lg border-bottom py-3 fs-14">
+            <!-- <ul class="mb-0 list-unstyled p-0 lh-lg border-bottom py-3 fs-14">
               <li>
                 <a class="d-flex align-items-center gap-1 text-secondary">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -489,7 +605,7 @@
                   <p class="mb-0">رزومه کارجویان (جدید)</p>
                 </a>
               </li>
-            </ul>
+            </ul> -->
             <!-- filter -->
             <div>
               <div class="border-bottom">
@@ -519,6 +635,85 @@
                       <option>500 هزار</option>
                     </select>
                   </div>
+                </div>
+              </div>
+              <div class="border-bottom">
+                <div class="d-flex align-items-center gap-3 cursor-pointer filterBtn py-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                    </path>
+                  </svg>
+                  <p class="font-bold fs-14 mb-0">تعداد اتاق</p>
+                </div>
+                <div class="px-2 filterContent">
+                  <label class="cursor-pointer w-100 mb-2">
+                    <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+                    1-2
+                  </label>
+                  <label class="cursor-pointer w-100 mb-2">
+                    <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+                    2-3
+                  </label>
+                  <label class="cursor-pointer w-100">
+                    <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+                    3-4
+                  </label>
+                </div>
+              </div>
+              <div class="border-bottom">
+                <div class="d-flex align-items-center gap-3 cursor-pointer filterBtn py-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                    </path>
+                  </svg>
+                  <p class="font-bold fs-14 mb-0">سن بنا</p>
+                </div>
+                <div class="px-2 filterContent">
+                  <label class="cursor-pointer w-100 mb-2">
+                    <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+                    زیر 10 سال
+                  </label>
+                  <label class="cursor-pointer w-100 mb-2">
+                    <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+                    10 تا 15 سال
+                  </label>
+                  <label class="cursor-pointer w-100">
+                    <input type="checkbox" class="form-check-input cursor-pointer ms-1">
+                    بالای 15 سال
+                  </label>
+                </div>
+              </div>
+              <div class="border-bottom">
+                <div class="d-flex align-items-center gap-3 cursor-pointer filterBtn py-3">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z">
+                    </path>
+                  </svg>
+                  <p class="font-bold fs-14 mb-0">طبقه</p>
+                </div>
+                <div class="px-2 filterContent">
+                  <label class="cursor-pointer w-100 mb-2">
+                    <input type="radio" name="stair" class="form-check-input cursor-pointer ms-1">
+                    1 طبقه
+                  </label>
+                  <label class="cursor-pointer w-100 mb-2">
+                    <input type="radio" name="stair" class="form-check-input cursor-pointer ms-1">
+                    2 طبقه
+                  </label>
+                  <label class="cursor-pointer w-100">
+                    <input type="radio" name="stair" class="form-check-input cursor-pointer ms-1">
+                    3 طبقه
+                  </label>
+                  <label class="cursor-pointer w-100">
+                    <input type="radio" name="stair" class="form-check-input cursor-pointer ms-1">
+                    بالای 3 طبقه
+                  </label>
                 </div>
               </div>
               <div class="border-bottom">
@@ -609,7 +804,8 @@
         </div>
         <!-- content -->
         <div class="col-lg-9">
-          <p class="text-secondary fs-12 mt-5 text-start mb-3 d-none d-lg-block">دیوار مشهد - نیازمندی‌ های رایگان، آگهی‌های خرید، فروش نو
+          <p class="text-secondary fs-12 mt-5 text-start mb-3 d-none d-lg-block">دیوار مشهد - نیازمندی‌ های رایگان،
+            آگهی‌های خرید، فروش نو
             و دست دوم و کارکرده، استخدام و خدمات</p>
           <div class="row g-4 mt-2 mb-5 mb-xl-3 pb-5 pb-xl-0">
             <div class="col-xl-4 col-lg-6">
@@ -1078,38 +1274,45 @@
   <!-- footer -->
 
   <footer class="d-xl-none py-3 position-fixed bottom-0 end-0 start-0 shadow bg-white z-10">
-     <div class="container">
+    <div class="container">
       <div class="d-flex align-items-center text-center fs-12 justify-content-between">
-       <a class="text-danger fw-bold">
-        <img alt="logo" src="assets/img/logo.svg" class="img-fluid mx-auto d-block">
-        <p class="mb-0 mt-2">آگهی ها</p>
-       </a>
-       <a class="text-secondary fw-bold">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-        </svg>
-        <p class="mb-0 mt-2">دسته ها</p>
-       </a>
-       <a class="text-secondary fw-bold">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
-          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
-        </svg>
-        <p class="mb-0 mt-2">ثبت آگهی</p>
-       </a>
-       <a class="text-secondary fw-bold">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
-          <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
-        </svg>
-        <p class="mb-0 mt-2">چت</p>
-       </a>
-       <a class="text-secondary fw-bold">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-        </svg>
-        <p class="mb-0 mt-2">دیوار من</p>
-       </a>
+        <a class="text-danger fw-bold">
+          <img alt="logo" src="assets/img/logo.svg" class="img-fluid mx-auto d-block">
+          <p class="mb-0 mt-2">آگهی ها</p>
+        </a>
+        <a class="text-secondary fw-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-ul"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+          </svg>
+          <p class="mb-0 mt-2">دسته ها</p>
+        </a>
+        <a class="text-secondary fw-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+          </svg>
+          <p class="mb-0 mt-2">ثبت آگهی</p>
+        </a>
+        <a class="text-secondary fw-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+          </svg>
+          <p class="mb-0 mt-2">چت</p>
+        </a>
+        <a class="text-secondary fw-bold">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+            viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          </svg>
+          <p class="mb-0 mt-2">دیوار من</p>
+        </a>
       </div>
-     </div>
+    </div>
   </footer>
 
   <script src="assets/js/jquery-3.7.1.min.js"></script>
