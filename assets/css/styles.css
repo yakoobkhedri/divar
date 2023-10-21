@@ -947,7 +947,9 @@ input[type='number'],
     /* scroll thumb and track */
     scroll-margin: 29px 0;
 }
-
+#divarMenu ul li:hover a {
+    color: #dc3545 !important;
+}
 /* header */
 
 .arrowDown {
@@ -1045,61 +1047,71 @@ input[type='number'],
 .catDiv:hover .dropdown-Div {
     display: block;
 }
-.categoryContent{
-  position: fixed !important;
-  background: white;
-  right: 0;
-  position: fixed;
-  overflow-y: auto;
-  top: 0;
-  bottom: 0;
-  width: 280px;
+
+#categoryContent.active {
+    right: 0;
 }
-.categoryContent ul{
-  padding-right: 0;
+
+.categoryContent {
+    position: fixed !important;
+    background: white;
+    right: -999px;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    width: 280px;
+    padding-bottom: 69px;
+    transition: all .4s;
 }
+
+.categoryContent ul {
+    padding-right: 0;
+}
+
+.categoryContent>ul li ul {
+    max-height: 0;
+    transition: all .4s;
+    overflow: hidden;
+}
+
+.categoryContent>ul li ul.active {
+    max-height: 2000px;
+}
+
+.categoryContent .title {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
 @media only screen and (min-width:1200px) {}
 
-@media only screen and (max-width:1200px) {
-
-    /* .catMenu {
-        position: fixed !important;
-        background-color: white;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        width: 280px;
-        overflow-y: auto;
-    }
-
-    .dropdown-Div li {
-        display: block !important;
-    }
-
-    .dropdown-Div,
-    .dropdown-Div>li>ul {
-        position: static !important;
-        display: block !important;
-        border: none;
-        box-shadow: none !important;
-    }
-
-    .dropdown-Div>li:hover {
-        background-color: transparent;
-    }
-
-    .dropdown-Div svg {
-        display: none;
-    }
-
-    .dropdown-Div>li:hover {
-        transform: translateX(0);
-    } */
-}
+@media only screen and (max-width:1200px) {}
 
 @media only screen and (max-width:992px) {}
 
-@media only screen and (max-width:768px) {}
+@media only screen and (max-width:768px) {
+    #divarMenu {
+        position: fixed;
+        right: -666px;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        transition: all .4s;
+        width: 239px;
+        overflow-y: scroll;
+        box-shadow: 28px 11px 32px 25px #eee;
+        z-index: 99;
+    }
+
+    #divarMenu.active {
+        right: 0;
+    }
+
+    #divarMenu>div {
+        height: 100vh;
+    }
+}
 
 @media only screen and (max-width:576px) {}
 

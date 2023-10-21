@@ -1,6 +1,3 @@
-// aos
-AOS.init();
-
 // accardion
 
 let filterBtn=Array.from(document.getElementsByClassName('filterBtn'));
@@ -11,6 +8,23 @@ filterBtn.forEach((item)=>{
         item.nextElementSibling.classList.toggle('active');
         item.querySelector('svg').classList.toggle('active');
     })
+})
+
+// mobile menu
+
+let menuRow=Array.from(document.getElementsByClassName('menuRow'));
+let categoryContent=Array.from(document.querySelectorAll('.categoryContent > ul li ul'));
+let categoryContent2=document.getElementById('categoryContent');
+let catIcon=document.getElementById('catIcon');
+
+menuRow.forEach((item)=>{
+    item.addEventListener('click',function () {
+        // categoryContent.forEach((items)=>{items.classList.remove('active')});
+        item.nextElementSibling.classList.add('active');
+    })
+})
+catIcon.addEventListener('click',function () {
+    categoryContent2.classList.toggle('active');
 })
 
 // swiper
