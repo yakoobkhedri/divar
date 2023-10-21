@@ -43,6 +43,25 @@
     </div>
   </div>
 
+  <!-- ostan Modal -->
+<div class="modal fade" id="ostan" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <!-- header -->
 
@@ -52,7 +71,7 @@
         <div class="d-flex align-items-center flex-grow-1  gap-3">
           <a class="d-none d-xl-block" href="index.html"><img alt="logo" src="assets/img/logo.svg"
               class="img-fluid w-70"></a>
-          <div class="d-flex align-items-center gap-1 cursor-pointer rounded-3 py-2 px-3 fw-bold">
+          <div data-bs-toggle="modal" data-bs-target="#ostan" class="d-flex align-items-center gap-1 cursor-pointer rounded-3 py-2 px-3 fw-bold">
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-geo-alt"
               viewBox="0 0 16 16">
               <path
